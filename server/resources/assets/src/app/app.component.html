@@ -1,0 +1,17 @@
+<div class="container">
+    <br />
+    <label for="search_input"> please input some text</label>
+    <input id="search_input"
+           class="form-control form-control-lg"
+           ontype="text"
+           (keydown)="checkArrawOperations($event)"
+           [(ngModel)]="searchText"/>
+    <div *appSearchMatch="searchText" >
+        <ul class="autocomplete_list">
+            <li (mouseenter)="overMouseFunc($event)"
+                *appSearchMatch="let name of names; index as i">
+                <p id="{{i}}">{{name}}</p>
+            </li>
+        </ul>
+    </div>
+</div>

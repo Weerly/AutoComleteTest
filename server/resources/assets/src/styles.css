@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+.autocomplete_list {
+    width: 300px;
+}
+.autocomplete_list li {
+    list-style: none;
+    margin-left: -40px;
+    height: 30px;
+    font-size: large;
+    padding-top: 3px;
+    padding-left: 54px;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+.autocomplete_list li:first-child {
+    border-top: 1px solid;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.autocomplete_list li:last-child {
+    border-bottom: 1px solid;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
